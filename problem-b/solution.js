@@ -1,6 +1,13 @@
-function person (name, age){
-    console.log('This is ' + name + ', ' + age + ' years old')
-};
+//Create a function that will take in a variable number of arguments and return their product.
 
-person ('Michel', 24);
-person ('Ellie', 42);
+function product(){
+    let a= 1
+    for (var x=0; x < arguments.length; x++){
+        a= a * arguments[x]
+    }
+    return a;
+}
+
+console.log(product(9,9))
+
+console.log(product(10,11))
